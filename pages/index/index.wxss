@@ -1,0 +1,22 @@
+image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.weui-grid{
+  height: 200rpx;
+}
+.weui-grid__label{
+  font-size: 23rpx;
+  margin-left: 20rpx;
+}
+.title{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 20rpx;
+}
+.weui-footer{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}

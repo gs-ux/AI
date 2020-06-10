@@ -1,0 +1,18 @@
+@import "../id/id.wxss";
+@import "../plant/plant.wxss";
+.td-dish{
+  width: 33%;
+  height: auto;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 25rpx;
+  display: inline-block;
+  color: #555555;
+  vertical-align:middle;
+}
+.space-2{
+  letter-spacing: 20rpx;
+}
+.td-dish-2{
+  color: #3c85f4;
+}

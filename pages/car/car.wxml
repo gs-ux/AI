@@ -1,0 +1,46 @@
+<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn">出现了点错误呀(눈_눈)</view>
+<view class="img-container container">
+  <view class="animation" wx:if="{{animation}}">
+    <view class="animation-list"></view>
+  </view>
+  <image class='img' mode='widthFix' src="{{imagePath}}"></image>
+</view>
+<view class="title">识别结果</view>
+<view class="table">
+  <view class="tr">
+    <view class="td-car">名称</view>
+    <view class="td-car">置信度</view>
+    <view class="td-car">年份</view>
+  </view>
+  <view class="tr">
+    <view class="td-car td-car-2">{{name_1}}</view>
+    <view class="td-car td-car-2">{{score_1}}</view>
+    <view class="td-car td-car-2">{{year_1}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-car td-car-2">{{name_2}}</view>
+    <view class="td-car td-car-2">{{score_2}}</view>
+    <view class="td-car td-car-2">{{year_2}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-car td-car-2">{{name_3}}</view>
+    <view class="td-car td-car-2">{{score_3}}</view>
+    <view class="td-car td-car-2">{{year_3}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-car td-car-2">{{name_4}}</view>
+    <view class="td-car td-car-2">{{score_4}}</view>
+    <view class="td-car td-car-2">{{year_4}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-car td-car-2">{{name_5}}</view>
+    <view class="td-car td-car-2">{{score_5}}</view>
+    <view class="td-car td-car-2">{{year_5}}</view>
+  </view>
+</view>
+<view class="space">
+  <view class="weui-footer">		
+	  <view class="weui-footer__text">了解更多，请访问www.gaosong.site</view>
+  </view>
+</view>
+<a bind:tap='choosePic' class="up-btn weui-btn_cell weui-btn_cell-default">上传车型图片</a>

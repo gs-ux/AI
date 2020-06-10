@@ -1,0 +1,56 @@
+<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn">出现了点错误呀(눈_눈)</view>
+<view class="img-container container">
+  <view class="animation" wx:if="{{animation}}">
+    <view class="animation-list"></view>
+  </view>
+  <image class='img' mode='widthFix' src="{{imagePath}}"></image>
+</view>
+<view class="title">识别结果</view>
+<view class="table">
+  <view class="tr">
+    <view class="td-1 space-4">号牌号码</view>
+    <view class="td-2">{{car_num}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">车辆类型</view>
+    <view class="td-2">{{car_type}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-3">所有人</view>
+    <view class="td-2">{{person}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1">住址</view>
+    <view class="td-2">{{address}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">使用性质</view>
+    <view class="td-2">{{use_prop}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">品牌型号</view>
+    <view class="td-2">{{model}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-6">车辆识别代码</view>
+    <view class="td-2">{{car_identify}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-5">发动机号码</view>
+    <view class="td-2">{{engine_num}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">注册日期</view>
+    <view class="td-2">{{reg_date}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">发证日期</view>
+    <view class="td-2">{{get_date}}</view>
+  </view>
+</view>
+<view class="space">
+  <view class="weui-footer">		
+	  <view class="weui-footer__text">了解更多，请访问www.gaosong.site</view>
+  </view>
+</view>
+<a bind:tap='choosePic' class="up-btn weui-btn_cell weui-btn_cell-default">上传驾驶证主页</a>

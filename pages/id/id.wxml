@@ -1,0 +1,41 @@
+<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn">出现了点错误呀(눈_눈)</view>
+<view class="img-container container">
+  <view class="animation" wx:if="{{animation}}">
+      <view class="animation-list"></view>
+  </view>
+  <image class='img' mode='widthFix' src="{{imagePath}}"></image>
+</view>
+<view class="title">识别结果</view>
+<view class="table">
+  <view class="tr">
+    <view class="td-1">姓名</view>
+    <view class="td-2">{{name}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1">性别</view>
+    <view class="td-2">{{sex}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1">民族</view>
+    <view class="td-2">{{nation}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1">出生</view>
+    <view class="td-2">{{birth}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1">地址</view>
+    <view class="td-2">{{address}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">身份证号</view>
+    <view class="td-2">{{id}}</view>
+  </view>
+</view>
+<view class="space">
+  <view class="weui-footer">
+    <view class="weui-footer__text">身份证识别速度较慢,请您做好心理准备</view>
+	  <view class="weui-footer__text">了解更多，请访问www.gaosong.site</view>
+  </view>
+</view>
+<a bind:tap='choosePic' class="up-btn weui-btn_cell weui-btn_cell-default">上传身份证照片页</a>

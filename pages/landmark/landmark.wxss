@@ -1,0 +1,4 @@
+@import "../id/id.wxss";
+.td-1{
+  letter-spacing: 5rpx;
+}

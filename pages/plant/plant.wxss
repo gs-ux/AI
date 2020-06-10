@@ -1,0 +1,23 @@
+@import "../id/id.wxss";
+.td-3{
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 25rpx;
+  display: inline-block;
+  color: #555555;
+  letter-spacing: 20rpx;
+}
+.space-3{
+  letter-spacing: 16rpx;
+}
+.td-4{
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+  color: #3c85f4;
+  text-align: center;
+  font-size: 25rpx;
+  display: inline-block;
+}

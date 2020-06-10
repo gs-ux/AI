@@ -1,0 +1,2 @@
+@import "../id/id.wxss";
+@import "../plant/plant.wxss";

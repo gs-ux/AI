@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/landmark/landmark",
+    "pages/dish/dish",
+    "pages/fruit/fruit",
+    "pages/car/car",
+    "pages/animal/animal",
+    "pages/plant/plant",
+    "pages/face/face",
+    "pages/license/license",
+    "pages/car_drive/car_drive",
+    "pages/drive/drive",
+    "pages/car_num/car_num",
+    "pages/bankcard/bankcard",
+    "pages/id/id"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

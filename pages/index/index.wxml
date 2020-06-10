@@ -1,0 +1,17 @@
+<image src="/images/ai.png" style="width:100%;height:400rpx;"></image>
+<view class="card" wx:for="{{page}}" wx:for-item="p">
+  <view class="title">{{p.name}}</view>
+  <view class="weui-grids">
+    <view class="card" wx:for="{{p.arr}}" wx:for-item="i">
+      <a class="weui-grid" id="{{i.a}}" bind:tap="navTo">
+        <view class="weui-grid__icon">
+          <image src="{{i.b}}" alt></image>
+        </view>
+        <view class="weui-grid__label">{{i.c}}</view>
+      </a>
+    </view>
+  </view>
+</view>
+<view class="weui-footer">
+  <view class="weui-footer__text">Copyright &copy; 2020 gaosong.site</view>
+</view>

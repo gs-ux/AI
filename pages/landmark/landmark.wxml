@@ -1,0 +1,20 @@
+<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn">出现了点错误呀(눈_눈)</view>
+<view class="img-container container">
+  <view class="animation" wx:if="{{animation}}">
+    <view class="animation-list"></view>
+  </view>
+  <image class='img' mode='widthFix' src="{{imagePath}}"></image>
+</view>
+<view class="title">识别结果</view>
+<view class="table">
+  <view class="tr">
+    <view class="td-1">地标名称</view>
+    <view class="td-2">{{name}}</view>
+  </view>
+</view>
+<view class="space">
+  <view class="weui-footer">		
+	  <view class="weui-footer__text">了解更多，请访问www.gaosong.site</view>
+  </view>
+</view>
+<a bind:tap='choosePic' class="up-btn weui-btn_cell weui-btn_cell-default">上传地标图片</a>

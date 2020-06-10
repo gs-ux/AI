@@ -1,0 +1,40 @@
+<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn">出现了点错误呀(눈_눈)</view>
+<view class="img-container container">
+  <view class="animation" wx:if="{{animation}}">
+    <view class="animation-list"></view>
+  </view>
+  <image class='img' mode='widthFix' src="{{imagePath}}"></image>
+</view>
+<view class="title">识别结果</view>
+<view class="table">
+  <view class="tr">
+    <view class="td-1 space-3">注册号</view>
+    <view class="td-2">{{num}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-6">社会信用代码</view>
+    <view class="td-2">{{code}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">单位名称</view>
+    <view class="td-2">{{name}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1">住址</view>
+    <view class="td-2">{{address}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-5">法定代表人</view>
+    <view class="td-2">{{person}}</view>
+  </view>
+  <view class="tr">
+    <view class="td-1 space-4">有效期至</view>
+    <view class="td-2">{{date}}</view>
+  </view>
+</view>
+<view class="space">
+  <view class="weui-footer">		
+	  <view class="weui-footer__text">了解更多，请访问www.gaosong.site</view>
+  </view>
+</view>
+<a bind:tap='choosePic' class="up-btn weui-btn_cell weui-btn_cell-default">上传营业执照</a>

@@ -1,0 +1,20 @@
+@import "../id/id.wxss";
+@import "../plant/plant.wxss";
+.tr{
+  height: auto;
+  min-height: 100rpx;
+}
+.td-car{
+  width: 33%;
+  height: auto;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 25rpx;
+  display: inline-block;
+  color: #555555;
+  vertical-align:middle;
+}
+.td-car-2{
+  color:  #3c85f4;
+  height: auto;
+}
